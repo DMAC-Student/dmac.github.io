@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="page">
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <h1></h1>
+    </header>
+
+    <div class="flexContainer">
+        <nav>
+            <img src="img/index.jpg" alt="Game Logo">
+            <ol>
+                <li id="aboutLink">About</li>
+                <li id="gameLink">Play</li>
+                <li id="feedbackLink">Feedback</li>
+            </ol>
+        </nav>
+
+        <main>
+            <div id="about">
+                <h2>About This Project</h2>
+                <P>This project has been designed as part of a new government initiative to teach children about cyber
+                    security risks via an interactive medium</P>
+                <p>Bacon ipsum dolor amet salami biltong chicken jerky meatloaf. Hamburger turkey alcatra short ribs
+                    cupim fatback ham hock tenderloin ground round. Brisket buffalo pastrami ball tip tongue chuck
+                    hamburger alcatra kevin biltong tri-tip. Ground round pork belly tongue, picanha drumstick bacon
+                    cupim landjaeger salami turkey.
+
+                    Shank short loin hamburger spare ribs jowl frankfurter pig beef ribs drumstick ground round ribeye.
+                    Bresaola drumstick salami boudin venison burgdoggen. Chuck shoulder porchetta sausage capicola
+                    prosciutto filet mignon tongue hamburger picanha brisket strip steak cow. Chislic pork loin
+                    turducken picanha, meatball burgdoggen shankle andouille biltong hamburger ham hock.
+
+                    Flank drumstick jowl pig. Tail biltong tenderloin meatloaf. Brisket swine andouille pig frankfurter
+                    pastrami capicola. Meatball shoulder filet mignon strip steak andouille. Drumstick sirloin picanha,
+                    ham corned beef meatball biltong porchetta prosciutto burgdoggen turducken.</p>
+                <p>Rump turducken drumstick beef ribs landjaeger, jerky cupim hamburger capicola boudin ribeye ground
+                    round biltong short loin. Shankle kevin jowl turducken chuck, salami shank tongue rump bacon.
+                    Chicken short loin tongue, fatback picanha kielbasa tail salami. Leberkas frankfurter kielbasa,
+                    boudin chuck strip steak landjaeger sirloin filet mignon. Beef ribs ham hock tongue short ribs
+                    meatball. Spare ribs chislic hamburger ham meatball fatback pork belly boudin sirloin turducken.
+                    Tri-tip ribeye burgdoggen pancetta, capicola turducken pork loin kielbasa tenderloin sirloin picanha
+                    bacon.</p>
+                <p id=bottom>We hope that you enjoy this demo.</p>
+            </div>
+
+            <div id="game">
+                <h2>Fermi's Mistake (Demo Ver.0.1)</h2>
+                <button id="BtnPlay">Start</button>
+                <button id="BtnOptions">Options</button>
+                <button id="BtnExit">Quit</button>
+            </div>
+
+            <div id="feedback">
+                <h2>Project Feedback</h2>
+                <p>If you would like to provide feedback on your experience with this demo, please use the below
+                    form
+                </p>
+                <form onSubmit="return alert('Thank you for providing feedback')">
+                    <label for="name" id="LblName">Name:</label>
+                    <input type="text" id="nameInput" required>
+                    <br>
+                    <label id="LblEmail">Email:</label>
+                    <input type="email" id="emailInput" required>
+                    <br>
+                    <label id="LblComment">Comment:</label>
+                    <br>
+                    <textarea id="comment" rows="10" cols="50"></textarea>
+                    <br>
+                    <input type="submit" id="submit" value="Submit Feedback">
+                </form>
+            </div>
+        </main>
+
+    </div>
+
+    <foot>
+        <p>All code included in this project has been created by David MacPherson. Nothing has been taken from
+            alternative sources.</p>
+    </foot>
+
+    <!--Popups, Modals, Etc.-->
+    <div id="optsModal">
+        <span id="close">&times;</span>
+        <div id="optsContent">
+            <br>
+            <form>
+                <Label for="mute" id="LblMute">Mute - </Label>
+                <input type="checkbox" id="mute" checked>
+            </form>
+            <br><br>
+            <form>
+                <Label for="font" id="LblFont">Font</Label><br>
+                <label for="monospace" id="LblMono">Monospace</label>
+                <input type="radio" name="fonts" id="monospace">
+                <label for="sans" id="LblSans">Sans-Serif</label>
+                <input type="radio" name="fonts" id="sans" checked>
+                <label for="pixel" id="Lblpixel">Pixel</label>
+                <input type="radio" name="fonts" id="pixel">
+            </form>
+            <br><br>
+            <form>
+                <label for="Colour Scheme" id="LblColour">Colour Scheme</label><br>
+                <label for="Skynet" id="LblSky">Skynet</label>
+                <input type="radio" name="colours" id="skynet">
+                <label for="Green" id="LblGreen">Greenscale</label>
+                <input type="radio" name="colours" id="green">
+                <label for="Wargames" id="LblWar">Wargames</label>
+                <input type="radio" name="colours" id="wargames">
+                <label for="greyscale" id="LblGrey" id="greyscale">Greyscale</label>
+                <input type="radio" name="colours" id="greyscale" checked>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/scripts.js" async defer></script>
+</body>
+
+</html>

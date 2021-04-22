@@ -1,0 +1,166 @@
+body{
+    background-color:#000000;
+    min-height:100%;
+    padding:0;
+    margin:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content:center;
+    color:#ffffff;
+}
+.flexContainer{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+nav{
+    display:flex;
+    flex-direction: column;
+    height:90vh;
+    width:10vw;
+    padding:0;
+    margin:0;
+    font-size:1.5em;
+}
+nav ol{
+    color:#ffffff;
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:100%;
+}
+nav img{
+    margin-top:-5%;
+    padding:10%;
+    width:150px;
+    height:100px;
+}
+nav li::first-letter{
+    font-size:2em;
+}
+nav li:hover{
+    color:red;
+    text-decoration:underline;
+    transition:1s;
+}
+nav li:after{
+    content:"\00a0\00a0\00a0\00a0";
+}
+main{
+    display:flex;
+    color:#ffffff;
+    height:90vh;
+    width:80vw;
+    justify-content:center;
+    align-items:center;
+    background-color:slategrey;
+}
+
+#about{
+    display:none;
+    background-color:slategray;
+    height:90vh;
+}
+#about h2{
+    text-align:center;
+    margin-top:3%;
+    font-size:2em;
+}
+#about p{
+    padding-left:5%;
+    padding-right:5%;
+    line-height:30px;
+    font-size:1.2em;
+}
+#bottom{
+    padding-top:5%;
+    text-align:center;
+}
+#feedback{
+    display:none;
+    background-color:slategray;
+    height:90vh;
+    text-align:center;
+    width:100%;
+}
+#feedback h2{
+    text-align:center;
+    margin-top:10%;
+    font-size:2em;
+}
+#feedback p{
+    padding-left:5%;
+    padding-right:5%;
+    line-height:30px;
+    font-size:1.2em;
+}
+#game{
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+#game h2{
+    margin-top:3%;
+}
+#game button{
+    margin-top:20%;
+    height:100px;
+    width:200px;
+    border-width:20px;
+    border-color:gold;
+    background-color:darkgoldenrod;
+    color:white;
+    font-size:1.2em;
+}
+foot{
+    display:none;
+}
+#optsContent{
+    text-align:center;
+}
+#optsModal{
+    display:none;
+    z-index:1;
+    position:fixed;
+    left:33%;
+    top:30%;
+    width:50%;
+    height:50%;
+    background-color:rgba(255,255,255,0.9);
+    border:5px solid black;
+    border-radius:20px;
+    text-align:right;
+    font-size:1.2em;
+}
+#gameStart{
+    position:absolute;
+    top:4.5%;
+    z-index:1;
+    display:flex;
+    color:#ffffff;
+    height:90vh;
+    width:80vw;
+    justify-content:center;
+    align-items:center;
+    background-color:slategrey;
+}
+#closeGame{
+    font-size:2em;
+    position:relative;
+    top:-48%;
+
+    height:5%;
+}
+#scene1{
+    position:relative;
+    line-height:25px;
+}
+
+#choices{
+    display:flex;
+    justify-content:space-around;
+}
